@@ -28,10 +28,9 @@ class ViewController: UIViewController {
     let answer3a = "LeTs dO soMeThiNG eaSy Xd."
     let answer3b = "lets do something nice and orginal."
     
-    let story4 = "you picked easy for the stopwatch and boom you got a 50% on it becuase of how lazy you were and how you just wanted your mark for the corse. same thing for easy 2"
+    let story4 = "you picked easy for the stopwatch and boom you got a 50% on it becuase of how lazy you were and how you just wanted your mark for the corse. same thing for easy, and for easy 2 if I cant find out how to make them have the same line of code. Eyyy bois I did it, im the next bill gates or steve jobs."
     let story5 = "you picked the hard option and as you were close to being done the last day came and most of the things you wanted to add could not be made cuz you were takeing too long to make everything look nice and orginal. So tuff luck you got 0%"
     let story6 = "you pick to do something easy for the story and wowe you got a 50% on it and passed the couse good job you lazy boi..."
-    let story7 = "you picked easy for the stopwatch and boom you got a 50% on it becuase of how lazy you were and how you just wanted your mark for the corse. same thing for easy 2"
     
     var storyIndex: Int = 1
     var buttonPressed: Int = 1
@@ -55,15 +54,11 @@ class ViewController: UIViewController {
         case 5:
             Question.text = story5
             
-        case 6:
-            Question.text = story6
-            
         default:
-            Question.text = story7
+            Question.text = story6
         }
         
     }
-    
     
     func greenTopButton(){
         switch storyIndex{
@@ -72,8 +67,8 @@ class ViewController: UIViewController {
             buttonPressed += 2
             
         case 2:
-            storyIndex += 1
-            buttonPressed += 1
+            storyIndex += 2
+            buttonPressed += 2
             
         case 3:
             storyIndex += 3
@@ -117,6 +112,7 @@ class ViewController: UIViewController {
         case 3:
             GreenButton.setTitle(answer3a, for: .normal)
             RedButton.setTitle(answer3b, for: .normal)
+
         default:
             GreenButton.setTitle("Try Again", for: .normal)
             RedButton.setTitle("try Again", for: .normal)
@@ -126,8 +122,8 @@ class ViewController: UIViewController {
 
     // buttons and texts
     @IBOutlet weak var Question: UITextView!
-    @IBOutlet weak var RedButton: UIButton! // tag 2
-    @IBOutlet weak var GreenButton: UIButton! // tag 1
+    @IBOutlet weak var RedButton: UIButton! // Tag 2
+    @IBOutlet weak var GreenButton: UIButton! // Tag 1
     @IBOutlet weak var DieRoom: UIButton!
     
     
