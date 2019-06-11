@@ -35,6 +35,7 @@ class ViewController: UIViewController {
     var storyIndex: Int = 1
     var buttonPressed: Int = 1
 
+    //save pls
     
     //funcs
     func storyTitle() {
